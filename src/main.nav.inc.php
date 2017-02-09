@@ -6,12 +6,12 @@
  *-->
 <div content="navbar">
     <nav>
-        <ul>
-            <li><a href=""><span>首页</span></a></li>
-            <li><a href=""><span>临床类</span></a></li>
-            <li><a href=""><span>影像类</span></a></li>
-            <li><a href=""><span>麻醉类</span></a></li>
-            <li><a href=""><span>护理类</span></a></li>
+        <ul class="nav nav-pills">
+            <li class="active"><a href="">首页</a></li>
+            <li><a href="">临床类</a></li>
+            <li><a href="">影像类</a></li>
+            <li><a href="">麻醉类</a></li>
+            <li><a href="">护理类</a></li>
         </ul>
     </nav>
 </div>
