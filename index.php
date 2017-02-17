@@ -25,6 +25,7 @@
         include "src/header.inc.php";
         include "src/main.nav.inc.php";
         include "src/container.inc.php";
+        include "src/footer.inc.php";
 //        include "src/bookList.inc.php";
 ?>
 

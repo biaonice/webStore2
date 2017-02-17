@@ -1,0 +1,33 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "extensionHost",
+      "request": "launch",
+      "name": "启动扩展",
+      "runtimeExecutable": "${execPath}",
+      "args": [
+        "--extensionDevelopmentPath=${workspaceRoot}"
+      ],
+      "sourceMaps": true,
+      "outFiles": [
+        "${workspaceRoot}/out/**/*.js"
+      ],
+      "preLaunchTask": "npm"
+    },
+    {
+      "name": "Launch Chrome against localhost",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:8090/webstore2/src/js.annormal.html",
+      "webRoot": "${workspaceRoot}"
+    },
+    {
+      "name": "Attach to Chrome",
+      "type": "chrome",
+      "request": "attach",
+      "port": 9222,
+      "webRoot": "${workspaceRoot}"
+    }
+  ]
+}

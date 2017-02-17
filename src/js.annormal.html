@@ -1,0 +1,114 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<style>
+  #dome1{
+    width: 800px;
+    height: 400px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 20px auto;
+    position:relative;
+  }
+  .dome2{
+    width: 800px;
+    height: 400px;
+    /*border: 1px solid #333;*/
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0;
+    margin: 0;
+  }
+  .dome2 > li{
+    list-style-type: none;
+    width: 800px;
+    order: 2;
+    height: 400px;
+  }
+  .dome2 > li > a > img{
+    width: 800px;
+    display: inline-block;
+    height: 400px;
+    filter:invert(100%);
+  }
+
+  .dome3{
+    position: absolute;
+    /*box-shadow:0 0 0 0vmax rgba(0,0,0,.8);*/
+    top:360px;
+    display: flex;
+    left:0;
+    right: 0;
+    bottom:0;
+    margin:0;
+    padding: 0;
+    background:hsla(0,0%,100%,.2);
+  }
+  .dome3 > li {
+    background: #fff;
+    list-style-type: none;
+    width: 200px;
+    height: 40px;
+  }
+  .dome3 > li > a > img{
+    width: 200px;
+    position: relative;
+    display: inline-block;
+    height: 40px;
+    opacity: .3;
+    filter: opacity(30);
+    background:#fff;
+  }
+  .dome3 > li > a > img:hover{
+     opacity: 1;
+     filter: opacity(30);
+  }
+</style>
+<body>
+
+  <script src="../js/jquery-3.1.1.js"></script>
+  <div id="dome1">
+    <ul class="dome2">
+      <li class="dome4" title="1"><a href="#"><img src="../image/1.jpg" alt=""></a></li>
+      <li class="dome4" title="2"><a href="#"><img src="../image/2.jpg" alt=""></a></li>
+      <li class="dome4" title="3"><a href="#"><img src="../image/3.jpg" alt=""></a></li>
+      <li class="dome4" title="4"><a href="#"><img src="../image/4.jpg" alt=""></a></li>
+    </ul>
+    <ul class="dome3">
+      <li title="1"><a href="#"><img src="../image/1.jpg" alt=""></a></li>
+      <li title="2"><a href="#"><img src="../image/2.jpg" alt=""></a></li>
+      <li title="3"><a href="#"><img src="../image/3.jpg" alt=""></a></li>
+      <li title="4"><a href="#"><img src="../image/4.jpg" alt=""></a></li>
+    </ul>
+  </div>
+
+  <script>
+    (function(){
+      var width=0;
+      var that="";
+      $(".dome3").on("click","li",function(){
+        that=this.title;
+        for(var i=0;i<$(".dome4").length;i++){
+          console.log($(this));
+              if($(this).title==that){
+                console.log($(this));
+                $(this).attr("order","1");
+            }else{
+              $(this).attr("order","1");
+            }
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
+
+
+

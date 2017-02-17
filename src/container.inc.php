@@ -8,7 +8,7 @@
     <div class="row">
         <div class="col-sm-6 col-md-4">
             <div class="thumbnail">
-            <img src="..." alt="...">
+            <img src="image/1.jpg" alt="" width="40" height="50">
             <div class="caption">
                 <h4>考拉英语学习日记</h4>
                 <p>专业的综合网上购物商城</p>
